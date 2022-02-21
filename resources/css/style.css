@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+html {
+    /* 사용자 설정 문자 크기 그대로 반영 되도록 */
+    font-size: 100%;
+}
+
+body {
+    line-height: 2.0;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 100px;
+    background-color: rgb(253, 251, 244);
+}
+
+
+
+
+#hr {
+    margin: -5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53 , 53, 53);
+}
+
+
+.main-nav {
+    position:fixed;
+    top:30px;
+    left: 20px;
+    background-color: rgb(253, 251, 244);
+}
+
+#main {
+    position:fixed;
+    top:125px;
+    left: 100px;
+}
+
+.main-nav a:hover {
+    color: rgb(143, 143, 143);
+}
+
+#fmenu a:hover {
+    color: rgb(143, 143, 143);
+}
+
+#page-title a:hover {
+    color: rgb(143, 143, 143);
+}
+
+.pmain-nav a:hover {
+    color: rgb(143, 143, 143);
+}
+
+#Welcome {
+    font-size: 0.6cm;
+}
+
+#backgroundpicture {
+    width: 100%;
+}
+
+#backgroundpicture {
+    max-width: 70%;
+    margin-top: -120px;
+    margin-left: -10px;
+}
+
+#portfolio {
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 20px;
+    height: 100vh;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+#aboutMe {
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 20px;
+    height: 100vh;
+    font-weight: 800;
+}
+
+#semiIndex {
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 20px;
+    height: 100vh;
+    font-weight: 800;
+}
+
+#finalIndex {
+    font-size: 100px;
+    text-align: center;
+    letter-spacing: 20px;
+    height: 100vh;
+    font-weight: 800;
+}
+
+.arrow {
+    transform: rotate(270deg);
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 10%;
+    color: rgb(76, 76, 76);
+}
+.arrow2 {
+    transform: rotate(90deg);
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: -30%;
+    color: rgb(76, 76, 76);
+}
+
+.content{
+    height: 100vh;
+}
+
+.main-nav {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    margin-left: 47.5%;  
+    width:100%;  
+    background-color: rgb(253, 251, 244);
+}
+
+.main-nav li {
+    margin-left: 80px;
+}
+
+.main-nav_in {
+    margin-top: -50px;
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    margin-left: 50%;    
+}
+
+.main-nav_in li {
+    margin-left: 80px;
+}
+
+#menu {
+    color: rgb(53 , 53, 53);
+}
+
+#main {
+    font-size: 80px;
+    margin-top: -120px;
+    margin-left: 60px;
+}
+
+/*****
+about me
+*****/
+.profile img{
+    margin-left: 150px;
+    margin-top:100px;
+    width: 18%;
+}
+
+.leeyelim {
+    margin-left: 150px;
+    margin-top: 1px;
+    font-size: 35px;
+}
+
+.name {
+    font-size: 13px;
+    margin-left: 150px;
+    margin-top: -2%;
+    line-height: 25px; 
+}
+.name table {
+    width: 30%;
+}
+
+.kh {
+    font-size: 13px;
+    margin-left: 40%;
+    margin-top: -500px;
+    line-height: 25px; 
+}
+
+.kh table {
+    width: 110%;
+}
+
+.kh #kh1 {
+    font-size:15px;
+    font-weight: 600;
+}
+
+.sco {
+    font-size: 13px;
+    margin-left: 40%;
+    margin-top:1%;
+    line-height: 25px; 
+}
+
+.sco table {
+    width: 110%;
+}
+
+.sco #sco1 {
+    font-size:15px;
+    font-weight: 600;
+}
+
+.aca {
+    font-size: 13px;
+    margin-left: 40%;
+    margin-top: 1%;
+    line-height: 25px; 
+}
+
+.aca table {
+    width: 110%;
+}
+
+.aca #aca1 {
+    font-size:15px;
+    font-weight: 600;
+}
+
+
+/**
+semi
+**/
+.semi-nav {
+    top: 150px;
+    left: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    position: fixed;
+}
+
+.semi-nav ul{
+    list-style-type: none;
+}
+
+
+
+#semi1H {
+    opacity:0; 
+    z-index: 2;
+    position: relative;
+    margin-top: -40px;
+    color: #6B8A24;
+}
+
+#semi1H:hover {
+    opacity:1;
+}
+
+
+
+
+
+.title {
+    font-size:30px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: 20%;
+}
+
+.semiImg img{
+    display : block;
+    margin-left : 20%;
+    margin-top: 150px;
+    width: 800px;
+
+}
+
+#anchor_div1 {
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+#anchor_div1 td{
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+
+#anchor_div1 img {
+    width: 600px;
+}
+
+.div2Title {
+    font-size:30px;
+    font-weight: 600;
+}
+
+#anchor_div2 {
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.div2Sev1 {
+    font-size:20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.semi1Img img{
+    width: 400px;
+}
+
+.semi3Img img{
+    width: 200px;
+}
+.semi4Img img{
+    width: 700px;
+}
+
+/**
+fianl
+**/
+
+.finalImg img{
+    display : block;
+    margin-left : 20%;
+    margin-top: 150px;
+    width: 800px;
+
+}
+
+.final1Img img {
+    width: 400px;
+}
+
+.final3Img img {
+    width: 600px;
+}
+
+.final4Img img {
+    width: 600px;
+}
+
+.final5Img img {
+    width: 600px;
+}
+
+.final6Img img {
+    width: 600px;
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+}
+
+footer p {
+    color: rgb(143, 143, 143);
+    font-size: 1rem;
+}
+
+
+
+

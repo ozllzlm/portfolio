@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_yelim/semi</title>
+    <!-- 외부 스타일 시트 -->
+    <link href="resources/css/style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="resources/image/y.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- 폰트 -->
+    <!-- 메인 영어 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@300;400&family=Rubik:wght@500&family=Supermercado+One&family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <style>
+      #semipage {
+        color: #6B8A24;
+        font-weight: 900;
+      }
+    </style>
+
+</head>
+<body>
+
+    <!-- header -->
+    <header class="page-header wrapper">
+        <anv>
+            <ul class="main-nav">
+                <li id="menu"><a href="aboutMe.html">about me</a></li>
+                <li id="menu"><a id="semipage" href="semi.html">semi Project</a></li>
+                <li id="menu"><a href="final.html">final Project</a></li>
+            </ul>
+            <div id="main"><a href="index.html">🅈</a></div>
+        </anv>
+    </header>
+
+    <div  class="semi-nav">
+      <ul>
+        <li id="semi"><div>| 목차</div>
+          <li id="semi"><a href="javascript:void(0)" onclick="scrolldown(1)"><div id="semi1S">개요</div><div id="semi1H">개요</div></a></li>
+          <li id="semi"><a href="javascript:void(0)" onclick="scrolldown(2)"><div id="semi1S">구현기능</div><div id="semi1H">구현기능</div></a></li>
+      </ul>
+    </div>
+
+    <div class="semiImg"><img src="resources/image/semimain.png"></div>
+    
+    <div id="anchor_div1">
+      <table>
+        <thead><tr><td class="div2Title" colspan="3">✔ 자취는 템빨</td></tr></thead>
+        <tbody>
+          <tr>
+           <td width="150px"><b>Github 주소</b></td><td><a href="https://github.com/chuhj1226/semiProject.git">https://github.com/chuhj1226/semiProject.git</a></td>
+          </tr>
+          <tr>
+            <td><b>수행기간</b></td><td colspan="3">2021년 09월 15일~2021년 11월 17일</td>
+          </tr>
+          <tr>
+            <td><b>개발 목표</b></td><td>자취생을 위한 꿀팁, 친구 찾기, 중고거래가 가능한 사이트 개발</td>
+          </tr>
+          <tr>
+            <td><b>개발 환경</b></td><td>운영체제: window 10<br>
+              개발도구: Eclipse 4.15.0<br>
+              DBMS: Oracle DB – sqldeveloper<br>
+              Server: Apache Tomcat 8.0<br>
+              [Front-End]<br>
+              마크업 언어: HTML5, CSS3<br>
+              스크립트 언어 : JavaScript, jQuery, ajax, Thymeleaf<br>
+              [Back-End]<br>
+              프로그래밍 언어 : Java 8<br>
+              서버 : Apache Tomcat 8.5<br>
+              데이터베이스 : Oracle 11g<br>      
+              </td>
+              </td>
+          </tr>
+          <tr>
+            <td><b>활용 기술</b></td><td>Servlet / JQuery</td>
+
+          <tr>
+            <td><b>DB설계</b></td><td><a href="https://www.erdcloud.com/d/fRKyE46XqAejyLvHX"><b>=> ERD 링크</b></a><br>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="anchor_div2">
+      <table>
+        <thead><tr><td class="div2Title">✔ 구현기능</td></tr></thead>
+        <tbody>
+          <tr>
+           <td><a href="https://ozllzlm.notion.site/semi-Project-bd132d8d38ad4b2ab0101daa80107646"><b style="color: #6B8A24; font-size:large;">=> 노션 링크</b></a><br>
+          </tr>
+          <tr>
+            <td class="div2Sev1" height="70px">&nbsp;&nbsp;&nbsp;☐ 사진게시판/ 글쓰기</td>
+          </tr>
+          <tr>
+           <td class="semi1Img"><img src="resources/image/semi1.png"><img src="resources/image/semi2.png"></td>
+          </tr>
+          <tr height="70px">
+            <td class="div2Sev1">&nbsp;&nbsp;&nbsp;☐ 게시판메인</td>
+          </tr>
+          <tr>
+            <td class="semi3Img"><img src="resources/image/semi3.png"></td>
+           </tr>
+          <tr>
+            <td class="div2Sev1" height="70px">&nbsp;&nbsp;&nbsp;☐ 댓글</td>
+          </tr>
+          <tr>
+            <td class="semi4Img"><img src="resources/image/semi4.png"></td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+    
+</body>
+
+
+<script>
+  function scrolldown(e){
+      console.log(e);
+      let a = $("#anchor_div" + e);
+			var offset = a.offset();
+			$('html').animate({scrollTop : offset.top}, 400);
+	};
+</script>
+
+
+
+</html>

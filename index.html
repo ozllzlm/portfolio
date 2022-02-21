@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_yelim</title>
+    <!-- 외부 스타일 시트 -->
+    <link href="resources/css/style.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="resources/image/y.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@300;400&family=Rubik:wght@500&family=Supermercado+One&family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- header -->
+    <header class="page-header wrapper">      
+        <anv>
+            <ul class="main-nav">
+                <li id="menu"><a href="aboutMe.html">about me</a></li>
+                <li id="menu"><a href="semi.html">semi Project</a></li>
+                <li id="menu"><a href="final.html">final Project</a></li>
+            </ul>
+            <div id="main"><a href="index.html">🅈</a></div>
+        </anv>
+    </header>
+
+    <br><br><br>
+    <div>
+        <div class="content" id="portfolio">Portfolio
+            <div class="arrow"><</div>
+        </div> 
+        <div class="content" id="aboutMe"><a href="aboutMe.html">about me</a>
+            <div class="arrow"><</div></div>
+        <div class="content" id="semiIndex"><a href="semi.html">Semi Project</a>
+            <div class="arrow"><</div></div>
+        <div class="content" id="finalIndex"><a href="final.html">final Project</a>
+            <div class="arrow2"><</div></div></div>
+    </div>
+
+</div>
+    
+</body>
+
+<footer>
+</footer>
+
+<script>
+    window.addEventListener("wheel", function(e){
+        e.preventDefault();
+    },{passive : false});
+
+    var $html = $("html");  
+    var page = 1;
+    var lastPage = $(".content").length;
+
+    $html.animate({scrollTop:0},10);
+
+    $(window).on("wheel", function(e){
+        if($html.is(":animated")) return;
+        if(e.originalEvent.deltaY > 0){
+            if(page== lastPage) return;
+            page++;
+        }else if(e.originalEvent.deltaY < 0){
+            if(page == 1) return;
+            page--;
+        }
+        var posTop = (page-1) * $(window).height();
+        $html.animate({scrollTop : posTop});
+    });
+
+
+</script>
+</html>
